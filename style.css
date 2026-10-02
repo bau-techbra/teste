@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    font-family: Mazzard, sans-serif
+}
+
+/*ajuste do bloco HEADER*/
+.top {
+    display: flex;
+    /*dois objetos na mesma linha porém afastados*/
+    justify-content: space-between;
+    /*Define o alinhamento dos elementos*/
+    align-items: center;
+    background: #ededed;
+    /*tamanho da imagem dentro do espaço Padding*/
+    padding: 20px 50px;
+}
+
+/*Ajuste somente da Imagem dentro do Padding*/
+.top img {
+    height: 50px;
+    width: auto;
+}
+
+/*Ajuste dos Botões de Hiperlinks*/
+.top nav a {
+    color: #000000;
+    /*Remove toda Formatação herdeira do HTML*/
+    text-decoration: none;
+    /* Transformando as palavras em Maiúscula*/
+    text-transform: uppercase;
+    /* DistÂncia dos elementos Futuros*/
+    margin-left: 17px;    
+}
+
+.bloctext {
+    max-width: autox;
+    width: 100%;
+}
+
+.ask {
+    background-color: #faf0e2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner {
+    height: 400px;
+    padding: 50px;
+    background: url("https://cdn.motor1.com/images/mgl/E63b3z/s1/mercedes-benz-classe-e-e300-2025.jpg") center/cover;
+}
+
+    /* MOSTRA NA AULA */
+    .text-banner {
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 4px black;
+    }
+
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 150px;
+}
+
+.card div{
+    background-color: #ededed;
+    color:#000000;
+    padding:  10px 80px;
+    border-radius: 8px;
+    transition: .8s;
+    /* ADD TEXTO NO CENTRO */
+    text-align: center;
+}
+
+.card div:hover {
+    transform: translateY(-10px);
+}
+
+    /* MOSTRA NA AULA */
+    .card a {
+        color: #000;
+        font-weight: bold;
+    }
+
+    /* SOBRE */
+    .bloctext {
+        background: #faf0e2;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    /* SERVIÇOS */
+    .lista-cards {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 30px;
+        padding: 50px 20px;
+    }
+
+    .card-servico {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #f7f7f7;
+    }
+
+    /* IMAGENS DOS CARDS */
+    .card-servico img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* LINKS DOS CARDS */
+    .card-servico a {
+        color: #222;
+    }
+
+
+
+
+
+    /* FORMULÁRIO */
+    .contato {
+        background: #ededed;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* TAMANHO DO FORMULÁRIO */
+    form {
+        max-width: 500px;
+        margin: 20px auto;
+        text-align: left;
+    }
+
+    /* CAMPOS DO FORMULÁRIO */
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+    }
+
+    /* BOTÃO */
+    button {
+        background: #222;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* EFEITO DO BOTÃO */
+    button:hover {
+        background: #555;
+    }
+
+
+
+
+
+        /* MAPA */
+    .localizacao {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+.localizacao iframe {
+        width: 100vw;
+        height: 300px;
+        border: 0;
+    }
+
+
+
+
+
+
+    /* RODAPÉ */
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 25px;
+        background: #222;
+        color: white;
+        padding: 40px 20px;
+    }
+    /* LINKS DO RODAPÉ */
+    .rodape a {
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    /* EFEITO DOS LINKS */
+    .rodape a:hover {
+        text-decoration: underline;
+    }
+    /* DIREITOS */
+    .direitos {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #555;
+        padding-top: 20px;
+    }
+
+
+
+
+    
+    /* AJUSTE PARA CELULAR */
+    @media (max-width: 700px) {
+        .top {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .top ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cards,
+        .lista-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        .card,
+        .card-servico {
+            width: 90%;
+            box-sizing: border-box;
+        }
+        .rodape {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .only_cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .only_card {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .only_card img {
+        width: 100%;
+    }

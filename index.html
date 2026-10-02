@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- A Tag META NAME corresponde a Descrição do Site no Google Pesquisa-->
+    <meta name="description" content="Veja os Melhores cabeçalhos de um jeito que você nunca viu antes.">
+
+
+    <!-- MOSTRAR NA AULA -->
+    <!-- Palavras-chave -->
+    <meta name="keywords" content="Car, carro,">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icone da página -->
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/022/498/229/non_2x/mercedes-benz-logos-popular-brands-of-cars-isolated-on-transparent-background-3d-render-free-png.png" type="image/icon">
+
+
+    
+    <title>Mercedes-Benz | Tecnologia e Confiança</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <!-- Esta imagem ficará no topo do site ao lado Esquerdo-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Mercedes-Benz_Logo_2010.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="Logo da Mercedes Benz">
+        <nav>
+            <ul>
+                <a href="Página Inicial">Página Inicial</a>
+                <a href="Sobre Nós">Sobre</a>
+                <a href="Contatos">Contatos</a>
+                <a href="Serviços">Serviço</a>
+                <a href="Veiculos">Veiculos</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Principal -->
+    <main>
+        <section class="banner">
+
+            <div class="text-banner">
+                <h1>Mercedes-Benz</h1>
+                <p>Conforto, tecnologia e confiança.</p>
+            </div>
+
+            <div> <!-- ALTEREI OS CARDS -->
+                <div class="card">
+                    <div>
+                        <h2>Nossa Tecnologia</h2>
+                        <p>Descubra a inovação que impulsiona nossos veículos.</p>
+                        <a href="serviços">Saiba mais</a>
+                    </div>
+                    <div>
+                        <h2>Nosso Seguro</h2>
+                        <p>Protegemos o que é mais importante para você.</p>
+                        <a href="serviços">Saiba mais</a>
+                    </div>
+                    <div>
+                        <h2>Nosso Banco</h2>
+                        <p>Financiamento com condições especiais para nossos clientes.</p>
+                        <a href="serviços">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section class="bloctext">
+            <div class="ask">
+                <div>
+                    <h2>Sobre Nós</h2>
+                    <p>Temos a responsabilidade de trazer o conforto que você precisa.</p>
+                    <p>Mercedes não é uma marca e sim uma Confiança.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="lista-cards">
+                <!-- CARD 1 -->
+                <div class="card-servico">
+
+                    <img
+                        src="https://uploads.diariodopoder.com.br/2026/05/f0223d9b-batch_26c0129_031.jpg" alt="Interior de um veículo Mercedes-Benz">
+                        <h3>Tecnologia</h3>
+                        <p> Descubra recursos desenvolvidos para facilitar sua experiência.</p>
+                        <a href="">Saiba mais sobre tecnologia</a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card-servico">
+
+                    <img
+                        src="https://uploads.diariodopoder.com.br/2026/05/f0223d9b-batch_26c0129_031.jpg" alt="Interior de um veículo Mercedes-Benz">
+                        <h3>Tecnologia</h3>
+                        <p> Descubra recursos desenvolvidos para facilitar sua experiência.</p>
+                        <a href="">Saiba mais sobre tecnologia</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demonstração Picture -->
+        <section>
+            <div class="only_cards">
+                    <div class="only_card">
+                        <picture>
+                            <img src="img/car_number_one.png" alt="Carro em PNG">
+                        </picture>
+                        <h2>Imagem 1</h2>
+                        <p>Está sendo usado tanto PNG quanto WEBP.</p>
+                    </div>
+
+                    <div class="only_card">
+                        <picture>
+                            <img src="img/car_number_two.webp" alt="Carro em WEBP">
+                        </picture>
+                        <h2>Imagem 2</h2>
+                        <p>Está sendo utilizado somente imagem em WEBP</p>>
+                    </div>
+
+                    <div class="only_card">
+                        <picture>
+                                type="image/webp">
+                            <source srcset="img/car_number_thee.AVIF" type="image/AVIF">
+                            <img src="img/car_number_thee.jpg" alt="Carro em jpg, AVIF, WEBP">
+                        </picture>
+                        <h2>Imagem 3</h2>
+                        <p>Está sendo utilizado trÊs modelos, WEBP, AVIF e PNG.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contato" id="contato">
+
+            <h2>Entre em Contato</h2>
+            <p>Estamos aqui para ajudar. Entre em contato conosco para mais informações.</p>
+
+            <form>
+
+                <!-- Campo de Nome -->
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required>
+
+                <!-- Campo de E-mail -->
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+
+                <!-- Campo de Assunto -->
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="">Selecione uma opção</option>
+                    <option value="veiculos">Veículos</option>
+                    <option value="servicos">Serviços</option>
+                </select>
+
+                <!-- Campo de Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Escreva sua mensagem">
+                </textarea>
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+        </section>
+
+
+        <!-- MAPA -->
+        <section CLASS="localizacao">
+            <h2>Onde Estamos</h2>
+            <p>Consulte nossa localização no mapa. </p>
+
+            <!-- Exemplo de mapa incorporado -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4338.699746145221!2d-46.774271876832195!3d-23.54499868580529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15771b45847a2f3%3A0xfe5fe406380c6d08!2sPr%C3%A9dio%20do%20Cristo%20-%20Funda%C3%A7%C3%A3o%20Bradesco!5e1!3m2!1spt-BR!2sbr!4v1789964357378!5m2!1spt-BR!2sbr" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+    
+    </main>
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+            <div>
+                <h2>Mercedes-Benz</h2>
+                <p>Tecnologia, conforto e confiança.</p>
+            </div>
+
+            <div>
+                <h3>Navegação</h3>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+                <p>E-mail: contato@exemplo.com</p>
+                <p>Telefone: (11) 0000-0000</p>
+            </div>
+
+            <p class="direitos">Página criada para fins educacionais.</p>
+        </footer>
+</body>
+</html>
